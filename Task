@@ -1,0 +1,9 @@
+class Task {
+  constructor(protected logger: ILogger) {
+  }
+
+  public saveChanges(user: User) {
+    // ...
+    this.logger.log('user made changes at DATETIME');
+  }
+}

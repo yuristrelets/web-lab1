@@ -1,0 +1,5 @@
+class FileLogger implements ILogger {
+  public log(message: string) {
+    // log to file
+  }
+}

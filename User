@@ -1,0 +1,9 @@
+class User {
+  constructor(protected notifier: IUserNotify) {
+  }
+
+  public assignTask(task: Task) {
+    // ...
+    this.notifier(this, '...');
+  }
+}

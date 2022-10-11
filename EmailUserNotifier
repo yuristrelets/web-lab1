@@ -1,0 +1,5 @@
+class EmailUserNotifier implements IUserNotifier {
+  public notify(user: User, message: string) {
+    // send email to user.email
+  }
+}

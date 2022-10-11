@@ -1,0 +1,3 @@
+interface IUserNotifier {
+  notify(user: User, message: string);
+}

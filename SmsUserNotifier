@@ -1,0 +1,5 @@
+class SmsUserNotifier implements IUserNotifier {
+  public notify(user: User, message: string) {
+    // send sms to user.phone
+  }
+}

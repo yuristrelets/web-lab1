@@ -1,0 +1,9 @@
+class Project {
+  constructor(public admin: User, protected notifier: IUserNotifier) {
+  }
+
+  public addUser(user: User, customNotifier?: IUserNotifier) {
+    // ...
+    (customNotifier ?? this.notifier).notify(this.admin, 'user.name was added to the project');
+  }
+}
