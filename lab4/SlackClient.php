@@ -6,10 +6,11 @@ class SlackClient
     public function __construct(string $apiKey, string $login)
     {
         // some logic
+        // for example, login
     }
 
-    public function sendMessage(string $chatId, string $title, string $message) 
+    public function sendMessage(string $chatId, string $message)
     {
-        // send logic
+        echo "Sent slack message '$message' to chat '$chatId'\n";
     }
 }

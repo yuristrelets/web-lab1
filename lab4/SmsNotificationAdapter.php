@@ -9,7 +9,6 @@ class SmsNotificationAdapter implements INotification
 
     public function send(string $title, string $message): void
     {
-        $this->client->push($this->phone, $this->sender, $title, $message);
-        echo "Sent sms message '$message' with title '$title' to phone '$this->phone' and sender '$this->sender'";
+        $this->client->push($this->phone, $this->sender, "$title\n$message");
     }
 }

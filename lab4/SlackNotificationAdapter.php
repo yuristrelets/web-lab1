@@ -9,7 +9,6 @@ class SlackNotificationAdapter implements INotification
 
     public function send(string $title, string $message): void
     {
-        $this->client->sendMessage($this->chatId, $title, $message);
-        echo "Sent slack message '$message' with title '$title' to chat '$this->chatId'";
+        $this->client->sendMessage($this->chatId, "title: $title, message: $message");
     }
 }
